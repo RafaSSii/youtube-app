@@ -1,4 +1,4 @@
-<% content_for :title, "Blog posts" %>
+<% content_for :title, "Blog Posts" %>
 
 <div class="w-full">
   <% if notice.present? %>
@@ -6,11 +6,11 @@
   <% end %>
 
   <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Blog posts</h1>
-    <%= link_to "New blog post", new_blog_post_path, class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white block font-medium" %>
+    <h1 class="font-bold text-4xl">Blog Posts</h1>
+    <%= link_to "Fazer Novo Post", new_blog_post_path, class: "rounded-md px-3.5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white block font-medium" %>
   </div>
 
-  <div id="blog_posts" class="min-w-full divide-y divide-gray-200 space-y-5">
-    
+  <div id="blog_posts" class="min-w-full grid md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+    <%= render @blog_posts%>
   </div>
 </div>
