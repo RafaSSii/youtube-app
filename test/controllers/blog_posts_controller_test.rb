@@ -17,7 +17,12 @@ class BlogPostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create blog_post" do
     assert_difference("BlogPost.count") do
-      post blog_posts_url, params: { blog_post: { meta_descrption: @blog_post.meta_descrption, meta_title: @blog_post.meta_title, tags: @blog_post.tags, title: @blog_post.title } }
+      post blog_posts_url, params: { blog_post: { 
+        meta_description: @blog_post.meta_description, 
+        meta_title: @blog_post.meta_title, 
+        tags: @blog_post.tags, 
+        title: @blog_post.title 
+      } }
     end
 
     assert_redirected_to blog_post_url(BlogPost.last)
@@ -34,7 +39,12 @@ class BlogPostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update blog_post" do
-    patch blog_post_url(@blog_post), params: { blog_post: { meta_descrption: @blog_post.meta_descrption, meta_title: @blog_post.meta_title, tags: @blog_post.tags, title: @blog_post.title } }
+    patch blog_post_url(@blog_post), params: { blog_post: { 
+      meta_description: @blog_post.meta_description, 
+      meta_title: @blog_post.meta_title, 
+      tags: @blog_post.tags, 
+      title: @blog_post.title 
+    } }
     assert_redirected_to blog_post_url(@blog_post)
   end
 

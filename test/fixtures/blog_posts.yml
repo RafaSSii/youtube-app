@@ -1,13 +1,14 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  meta_descrption: MyText
-  meta_title: MyString
-  tags: MyText
+  title: "Primeiro post"
+  meta_description: "Descrição curta do primeiro post"
+  meta_title: "Título SEO do primeiro post"
+  tags: "rails, ruby, blog"
 
 two:
-  title: MyString
-  meta_descrption: MyText
-  meta_title: MyString
-  tags: MyText
+  title: "Segundo post"
+  meta_description: "Descrição curta do segundo post"
+  meta_title: "Título SEO do segundo post"
+  tags: "testes, fixtures, debug"
+
