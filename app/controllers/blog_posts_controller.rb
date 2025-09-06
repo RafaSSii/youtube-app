@@ -67,5 +67,4 @@ class BlogPostsController < ApplicationController
     def blog_post_params
       params.expect(blog_post: [ :title, :body, :meta_descrption, :meta_title, :meta_image, :banner_image, :tags ])
     end
-
 end
